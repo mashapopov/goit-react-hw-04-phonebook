@@ -11,9 +11,3 @@ export const Input = styled.input`
   padding: 5px 10px;
   width: 200px;
 `;
-//   margin-left: 5px;
-//   border: none;
-//   outline: none;
-//   border-radius: 10px;
-//   padding-left: 10px;
-//   height: 20px;

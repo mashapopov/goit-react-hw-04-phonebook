@@ -1,4 +1,3 @@
-// import React, { Component } from 'react';
 import { useState } from 'react';
 import { nanoid } from 'nanoid';
 import { Form, Label, Input, Button } from './ContactForm.styled';
@@ -9,19 +8,11 @@ export function ContactForm({ onSubmit }) {
 
   const loginInputId = nanoid();
 
-  // loginInputId = nanoid();
-
-  // state = {
-  //   name: '',
-  //   number: '',
-  // };
-
   const handleChange = e => {
     e.preventDefault();
 
     const { name, value } = e.target;
 
-    // this.setState({ [name]: value });
     switch (name) {
       case 'name':
         setName(value);
@@ -39,12 +30,10 @@ export function ContactForm({ onSubmit }) {
   const handleSubmit = e => {
     e.preventDefault();
     onSubmit({ name, number });
-    // this.props.onSubmit(this.state);
     reset();
   };
 
   const reset = () => {
-    // this.setState({ name: '', number: '' });
     setName('');
     setNumber('');
   };
